@@ -1,0 +1,117 @@
+.resizable-divs-container {
+  display: flex;
+  /* justify-content: space-between; */
+  height: 100vh;
+}
+
+.resizable-div {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.resizable-div .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.resizable-div:nth-child(1) {
+  background-color: rgba(255, 0, 0, 0.2); /* Light Red */
+}
+
+.resizable-div:nth-child(2) {
+  background-color: rgba(0, 255, 0, 0.2); /* Light Green */
+}
+
+.resizable-div:nth-child(3) {
+  background-color: rgba(0, 0, 255, 0.2); /* Light Blue */
+}
+
+.react-resizable-handle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.react-resizable-handle-sw {
+  bottom: 0;
+  left: 0;
+  cursor: sw-resize;
+}
+
+.react-resizable-handle-se {
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+.react-resizable-handle-nw {
+  top: 0;
+  left: 0;
+  cursor: nw-resize;
+}
+
+.react-resizable-handle-ne {
+  top: 0;
+  right: 0;
+  cursor: ne-resize;
+}
+
+.resizable-divs-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+}
+
+.resizable-div {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  /* margin: 5px; */
+}
+
+.resizable-div .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.resizable-div:nth-child(1),
+.resizable-div:nth-child(2) {
+  width: 50vw;
+}
+
+.resizable-div:nth-child(3) {
+  width: 100vw;
+}
+
+button {
+  margin: 2%;
+}
+
+.content {
+  height: "45vh";
+  width: "50vw";
+}
+
+@media (max-width: 500px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    width: "100vw";
+  }
+}
