@@ -5,12 +5,6 @@ import "./App.css";
 import ResizableDivs from "./ResizableDivs";
 import { countURL } from "./helpers/urls";
 
-import MuiAlert from "@material-ui/lab/Alert";
-
-function Alert(props) {
-  return <MuiAlert elevation={6} variant="filled" {...props} />;
-}
-
 function App() {
   const [count, setCount] = useState(0);
 
